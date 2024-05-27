@@ -18,10 +18,27 @@
         </fieldset>
         <fieldset>
             <legend>Account type (required)</legend>
-            <label for="business"><input type="radio" name="acc-type" id="business" checked>Personal</label>
-            <label for="business"><input type="radio" name="acc-type" id="business">Busines</label>
+            <label for="business"><input class="inline" type="radio" name="acc-type" id="business" checked>Personal</label>
+            <label for="business"><input class="inline" type="radio" name="acc-type" id="business">Business</label>
         </fieldset>
-        <fieldset></fieldset>
+        <fieldset>
+            <label for="picture">Upload a profile picture: <input type="file" name="pp" id="picture"></label>
+            <label for="age">Input your age (years): <input type="number" min="13" max="120" name="ages" id="age"></label>
+            <label for="option">How did you hear about us?
+                <select name="options" id="option">
+                    <option value="">(select one)</option>
+                    <option value="1">News</option>
+                    <option value="2">YouTube Channel</option>
+                    <option value="3">Forum</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+            <label for="bio">Provide a bio:
+                <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+            </label>
+        </fieldset>
+        <label for="terms"><input type="checkbox" class="inline" name="terms-and-conditions" id="terms"> I accept the <a href="#terms-and-conditions">terms and conditions</a></label>
+        <input type="submit" value="Submit">
     </form>
 </body>
 </html>
